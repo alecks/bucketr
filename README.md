@@ -18,14 +18,16 @@ It's still in early development, so database options are limited. DBs aren't par
 
 Assuming that you've correctly configured Go and have a MongoDB server listening on `:27017`, run
 
-```shell script
-$ go install github.com/fjah/bucketr
+```console
+you@server:~$ go install github.com/fjah/bucketr
 ```
 
 then simply execute the binary with
 
-```shell script
-$ MONGO_URI=mongodb://localhost:27017 bucketr
+```console
+you@server:~$ MONGO_URI=mongodb://localhost:27017 bucketr
+db: open
+http: ready to listen on :8080
 ```
 
 Note that Go and MongoDB need to be installed separately. In the future, this will all be done for you with Docker.
